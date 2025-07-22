@@ -32,8 +32,8 @@ class LLMClient:
         try:
             response.raise_for_status()
         except requests.HTTPError as e:
-            print("❌ API Error:", response.status_code)
-            print("🔍 Response JSON:", response.json())
+            print("API Error:", response.status_code)
+            print("Response JSON:", response.json())
             raise
 
         result = response.json()
