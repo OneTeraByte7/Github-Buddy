@@ -1,12 +1,12 @@
 # main.py
-
+from .llm_client import LLMClient
+from .prompts import build_readme_prompt, build_license_prompt
 import os
 import subprocess
 import argparse
 import git
 from dotenv import load_dotenv
-from llm_client import LLMClient
-from prompts import build_readme_prompt, build_license_prompt
+
 
 load_dotenv()
 
